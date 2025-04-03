@@ -1,0 +1,1 @@
+DELETE FROM Customers where CustomerID=102;
