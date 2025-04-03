@@ -5,7 +5,8 @@ INSERT INTO Students (StudentID, StudentName, Email) VALUES
 
 INSERT INTO Courses(CourseID, CourseName, Credits) VALUES
 	(101, 'Database Systems', 4),
-	(102, 'Spring Boot', 5);
+	(102, 'Spring Boot', 5),
+	(103, 'Angular', 4);
 
 INSERT INTO Enrollments (EnrollmentID, StudentID, CourseID, EnrollmentDate) VALUES
 	(1, 1, 101, '2025-03-10'),
