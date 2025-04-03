@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(CustomerNotFoundException.class)
-    public ResponseEntity<Object> handleProductNotFoundException(CustomerNotFoundException exception, WebRequest request){
+    public ResponseEntity<Object> handleCustomerNotFoundException(CustomerNotFoundException exception, WebRequest request){
         Map<String, Object> errorBody = new HashMap<>();
         errorBody.put("Timestamp", LocalDateTime.now());
         errorBody.put("Status", HttpStatus.NOT_FOUND);
