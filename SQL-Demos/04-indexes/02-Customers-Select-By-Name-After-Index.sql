@@ -1,0 +1,1 @@
+SELECT * from Customers WHERE Name='Peter';
