@@ -1,0 +1,1 @@
+INSERT INTO OrderDetails (OrderID, ProductID, Quantity) VALUES (1, 3, 100);

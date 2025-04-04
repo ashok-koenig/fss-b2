@@ -1,0 +1,8 @@
+CREATE TABLE OrderDetails (
+	OrderDetailID INT PRIMARY KEY AUTO_INCREMENT,
+	OrderID INT NOT NULL,
+	ProductID INT NOT NULL,
+	Quantity INT NOT NULL CHECK (Quantity > 0 ),
+	CONSTRAINT FK_OrderDetails_Orders FOREIGN KEY (OrderID) REFERENCES Orders(OrderID) ON DELETE CASCADE,
+	CONSTRAINT FK_OrderDetails_Products FOREIGN KEY (ProductID) REFERENCES Products(ProductID) ON DELETE CASCADE
+	);
